@@ -31,8 +31,10 @@ const App = () =>{
   }
 ]
   return (
-    <Directory categories={categories}/>
-    
+    <div>
+      <Directory categories={categories}/>
+      
+    </div>
   );
 }
 export default App;
