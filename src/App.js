@@ -1,40 +1,42 @@
-import Directory from './components/directory/directory.component';
 
+import { Routes, Route } from "react-router-dom";
+import Home from "./routes/home/home.component";
+import Navigation from "./components/navigation/navigation.component";
+
+
+const Shop = () => {
+  return <h1>I am the SHOP Page</h1>
+}
+
+const MenuItem2 = () => {
+  return <h1>I am the MenuItem2 Page</h1>
+}
+
+const MenuItem3 = () => {
+  return <h1>I am the MenuItem3 Page</h1>
+}
+const MenuItem4 = () => {
+  return <h1>I am the MenuItem4 Page</h1>
+}
+const MenuItem5 = () => {
+  return <h1>I am the MenuItem5 Page</h1>
+}
 
 const App = () =>{
-
-  const categories = [
-  {
-    "id": 1,
-    "title": "hats",
-    "imageUrl": "https://i.ibb.co/cvpntL1/hats.png"
-  },
-  {
-    "id": 2,
-    "title": "jackets",
-    "imageUrl": "https://i.ibb.co/px2tCc3/jackets.png"
-  },
-  {
-    "id": 3,
-    "title": "sneakers",
-    "imageUrl": "https://i.ibb.co/0jqHpnp/sneakers.png"
-  },
-  {
-    "id": 4,
-    "title": "womens",
-    "imageUrl": "https://i.ibb.co/GCCdy8t/womens.png"
-  },
-  {
-    "id": 5,
-    "title": "mens",
-    "imageUrl": "https://i.ibb.co/R70vBrQ/men.png"
-  }
-]
   return (
-    <div>
-      <Directory categories={categories}/>
+    <Routes>
+      <Route path='/' element={<Navigation />}>
+        <Route /*path='home'*/ index element={<Home />} /> {/*index OR index={true} - binds a page to home page at start up*/}
+        <Route path='shop' element={<Shop />} />
+        <Route path='MenuItem2' element={<MenuItem2 />} />
+        <Route path='MenuItem3' element={<MenuItem3 />} />
+        <Route path='MenuItem4' element={<MenuItem4 />} />
+        <Route path='MenuItem5' element={<MenuItem5 />} />      
+
+      </Route>
       
-    </div>
+       
+    </Routes>
   );
-}
+};
 export default App;
