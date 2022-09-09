@@ -24,7 +24,7 @@ const SignUpForm = () =>{
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        if(password != confirmPassword) {
+        if(password !== confirmPassword) {
             alert ("password do not match");
             return;
         }
@@ -38,7 +38,7 @@ const SignUpForm = () =>{
             resetFormFields ();
 
         } catch (error) {
-            if (error.code == 'auth/email-already-in-use'){
+            if (error.code === 'auth/email-already-in-use'){
                 alert ('Cannot create user, email already in use');
             } else {
                 console.log ('user creation encounted an error', error);
