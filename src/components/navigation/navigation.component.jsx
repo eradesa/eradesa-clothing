@@ -31,10 +31,10 @@ const Navigation = () => {
                 MENUITEM3
             </Link>
             <Link className='nav-link' to='/MenuItem4'>
-                MENUITEM4
+                To do List
             </Link>
             <Link className='nav-link' to='/MenuItem5'>
-                MENUITEM5
+                Blog
             </Link>
             {
               currentUser ? (

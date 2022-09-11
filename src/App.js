@@ -2,16 +2,16 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./routes/home/home.component";
 import Navigation from "./components/navigation/navigation.component";
-
 import Authentication from "./routes/authentication/authentication.components";
+import Shop from "./routes/shop/shop.component";
+import ToDoList from "./routes/toDoList/toDoList.component";
+import BlogPage from "./routes/blogPage/blogPage.component";
 //test
 
 //test 20220911_07.43
 
 
-const Shop = () => {
-  return <h1>I am the SHOP Page</h1>
-}
+
 
 const MenuItem2 = () => {
   return <h1>I am the MenuItem2 Page</h1>
@@ -20,12 +20,8 @@ const MenuItem2 = () => {
 const MenuItem3 = () => {
   return <h1>I am the MenuItem3 Page</h1>
 }
-const MenuItem4 = () => {
-  return <h1>I am the MenuItem4 Page</h1>
-}
-const MenuItem5 = () => {
-  return <h1>I am the MenuItem5 Page</h1>
-}
+
+
 
 const App = () =>{
   return (
@@ -35,8 +31,8 @@ const App = () =>{
         <Route path='shop' element={<Shop />} />
         <Route path='MenuItem2' element={<MenuItem2 />} />
         <Route path='MenuItem3' element={<MenuItem3 />} />
-        <Route path='MenuItem4' element={<MenuItem4 />} />
-        <Route path='MenuItem5' element={<MenuItem5 />} />  
+        <Route path='MenuItem4' element={<ToDoList />} />
+        <Route path='MenuItem5' element={<BlogPage />} />  
         <Route path='auth' element={<Authentication />} />     
 
       </Route>
