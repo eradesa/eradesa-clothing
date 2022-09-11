@@ -3,10 +3,10 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./routes/home/home.component";
 import Navigation from "./components/navigation/navigation.component";
 
-import SignIn from "./routes/sign-in/sign-in.components";
+import Authentication from "./routes/authentication/authentication.components";
 //test
 
-//test 20220908
+//test 20220911_07.26
 
 
 const Shop = () => {
@@ -37,7 +37,7 @@ const App = () =>{
         <Route path='MenuItem3' element={<MenuItem3 />} />
         <Route path='MenuItem4' element={<MenuItem4 />} />
         <Route path='MenuItem5' element={<MenuItem5 />} />  
-        <Route path='sign-in' element={<SignIn />} />     
+        <Route path='auth' element={<Authentication />} />     
 
       </Route>
       
