@@ -4,6 +4,7 @@ import Home from "./routes/home/home.component";
 import Navigation from "./components/navigation/navigation.component";
 import Authentication from "./routes/authentication/authentication.components";
 import Shop from "./routes/shop/shop.component";
+import Checkout from "./routes/checkout/checkout.component"
 import ToDoList from "./routes/toDoList/toDoList.component";
 import BlogPage from "./routes/blogPage/blogPage.component";
 //test
@@ -33,7 +34,8 @@ const App = () =>{
         <Route path='MenuItem3' element={<MenuItem3 />} />
         <Route path='MenuItem4' element={<ToDoList />} />
         <Route path='MenuItem5' element={<BlogPage />} />  
-        <Route path='auth' element={<Authentication />} />     
+        <Route path='auth' element={<Authentication />} />
+        <Route path='checkout' element={<Checkout />} />       
 
       </Route>
       
